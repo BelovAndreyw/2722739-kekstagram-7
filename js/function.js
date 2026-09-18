@@ -10,12 +10,10 @@ function checkStringLenght(string, maxLenght) {
 
 function checkIfPalindrome (string) {
   string = string.replaceAll(' ', '').toUpperCase();
-  console.log(string);
   let newString = '';
   for (let i = string.length - 1; i >= 0; i = i - 1) {
     newString += string[i];
   }
-  console.log(newString);
   return newString === string;
 }
 
