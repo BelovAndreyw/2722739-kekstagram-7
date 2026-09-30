@@ -23,9 +23,7 @@ function checkIfPalindrome (string) {
 
 function extractNumber(value) {
   let newValue = '';
-  if (typeof value !== 'string') {
-    value = value.toString();
-  }
+  value = value.toString();
   for (let i = 0; i <= value.length; i++ ) {
     if (!isNaN(value[i]) && value[i] !== ' ') {
       newValue += value[i];
@@ -40,4 +38,3 @@ function extractNumber(value) {
 
 checkStringLenght('Hello', 10); // true
 checkIfPalindrome('A man a plan a canal Panama'); // true
-extractNumber('abc123def'); // 123
