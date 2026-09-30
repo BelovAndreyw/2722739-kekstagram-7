@@ -100,7 +100,7 @@ const createComment = () => {
 
   // Случайным образом добавляем второе сообщение.
   if (getRandomInteger(1, 2) === 2) {
-    message += ' ' + MESSAGES[getRandomInteger(0, MESSAGES.length - 1)];
+    message = `${message} ${MESSAGES[getRandomInteger(0, MESSAGES.length - 1)]}`;
   }
 
   return {
@@ -127,5 +127,3 @@ const descriptions = Array.from(
   { length: DESCRIPTIONS_COUNT },
   createDescription
 );
-
-console.log(descriptions);

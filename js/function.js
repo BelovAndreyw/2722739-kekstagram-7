@@ -36,5 +36,4 @@ function extractNumber(value) {
   }
 }
 
-checkStringLenght('Hello', 10); // true
-checkIfPalindrome('A man a plan a canal Panama'); // true
+extractNumber('1, 2, 3, 4, 5, 6, 7, 8, 9'); // вернет 123456789
