@@ -23,9 +23,7 @@ function checkIfPalindrome (string) {
 
 function extractNumber(value) {
   let newValue = '';
-  if (typeof value !== 'string') {
-    value = value.toString();
-  }
+  value = value.toString();
   for (let i = 0; i <= value.length; i++ ) {
     if (!isNaN(value[i]) && value[i] !== ' ') {
       newValue += value[i];
@@ -38,6 +36,6 @@ function extractNumber(value) {
   }
 }
 
-checkStringLenght('Hello', 10); // true
-checkIfPalindrome('A man a plan a canal Panama'); // true
-extractNumber('abc123def'); // 123
+extractNumber('1, 2, 3, 4, 5, 6, 7, 8, 9'); // вернет 123456789
+checkIfPalindrome('А роза упала на лапу Азора'); // вернет true
+checkStringLenght('Hello', 10); // вернет true
