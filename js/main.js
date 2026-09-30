@@ -127,3 +127,5 @@ const descriptions = Array.from(
   { length: DESCRIPTIONS_COUNT },
   createDescription
 );
+
+descriptions.sort((a, b) => a.id - b.id);//
