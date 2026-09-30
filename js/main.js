@@ -128,4 +128,4 @@ const descriptions = Array.from(
   createDescription
 );
 
-descriptions.sort((a, b) => a.id - b.id);//
+descriptions.sort((a, b) => a.id - b.id);// просто чтоб ошибки не было, vscode сам чет предложил 
